@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.andoca.imagefilter" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+	<packageInformation>
+		<packageName><![CDATA[Imagefilter]]></packageName>
+		<packageDescription language="de-informal"><![CDATA[Bestimme selber, von welchen Domains Bilder mittels BB-Code eingebunden werden dürfen.]]></packageDescription>
+		<packageDescription language="de"><![CDATA[Bestimmen Sie selber, von welchen Domains Bilder mittels BB-Code eingebunden werden dürfen.]]></packageDescription>
+		<packageDescription language="en"><![CDATA[Create a whitelist with domains you allow to be used with the img-BBCode.]]></packageDescription>
+		<packageurl><![CDATA[http://www.andoca.de]]></packageurl>
+		<version>1.1.0 dev 1</version>
+		<date>2011-07-13</date>
+		<standalone>0</standalone>
+		<plugin>com.woltlab.wcf.data.message</plugin>
+	</packageInformation>
+
+	<authorInformation>
+		<author><![CDATA[Andoca Haustier-WG UG (haftungsbeschränkt)]]></author>
+		<authorURL><![CDATA[http://www.andoca.de]]></authorURL>
+	</authorInformation>
+	
+	<requiredpackages>
+		<requiredpackage minversion="1.1.0">com.woltlab.wcf</requiredpackage>
+	</requiredpackages>
+	
+	<instructions type="install">
+		<files>files.tar</files>
+		<eventlistener>eventlistener.xml</eventlistener>
+		<options>options.xml</options>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="en">en.xml</languages>
+	</instructions>
+	
+	<instructions type="update" fromversion="*">
+		<files>files.tar</files>
+		<eventlistener>eventlistener.xml</eventlistener>
+		<options>options.xml</options>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="en">en.xml</languages>
+	</instructions>
+</package>
